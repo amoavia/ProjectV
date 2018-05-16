@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ProjectV</title>
+
+        <!-----BS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-----CSS-->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+
+
+
+    <body>
+        <div class="wrapper">
+
+
+
+
+            <!-----SB HOLDER-->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h1>N Y V A</h1>
+                </div>
+
+
+
+
+                <!-----SB ITEMS-->
+                <ul class="list-unstyled components">
+                    <li class="inactive">
+                        <span class="glyphicon glyphicon-calendar"> </span>
+                        <a href="#shiftSubmenu" data-toggle="collapse" aria-expanded="false">Shift Management</a>
+                        <ul class="collapse list-unstyled" id="shiftSubmenu">
+                            <li><a href="#">Projections</a></li>
+                            <li><a href="#">Recap</a></li>
+                            <li><a href="#">Override</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-user"> </span>
+                        <a href="#hrSubmenu" data-toggle="collapse" aria-expanded="false">Human Resources</a>
+                        <ul class="collapse list-unstyled" id="hrSubmenu">
+                            <li><a href="#">Scheduling</a></li>
+                            <li><a href="#">User Management</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-list-alt"> </span>
+                        <a href="#auditSubmenu" data-toggle="collapse" aria-expanded="false">Internal Auditing</a>
+                        <ul class="collapse list-unstyled" id="auditSubmenu">
+                            <li><a href="#">Conduct Audit</a></li>
+                            <li><a href="#">Manage Audit</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-credit-card"> </span>
+                        <a href="#storeSubmenu" data-toggle="collapse" aria-expanded="false">Store Management</a>
+                        <ul class="collapse list-unstyled" id="storeSubmenu">
+                            <li><a href="#">Business Units</a></li>
+                            <li><a href="#">Brands</a></li>
+                            <li><a href="#">Repair Orders</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-book"> </span>
+                        <a href="#inventorySubmenu" data-toggle="collapse" aria-expanded="false">Inventory Control</a>
+                        <ul class="collapse list-unstyled" id="inventorySubmenu">
+                            <li><a href="#">Weekly Count</a></li>
+                            <li><a href="#">Purchases</a></li>
+                            <li><a href="#">Sales Mix</a></li>
+                            <li><a href="#">Product List</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-folder-open"> </span>
+                        <a href="#reportSubmenu" data-toggle="collapse" aria-expanded="false">Reports</a>
+                        <ul class="collapse list-unstyled" id="reportSubmenu">
+                            <li><a href="#">SPACE</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+
+            <!-----CONTENT HOLDER-->
+            <div id="content">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-basic btn-lg navbar-btn">
+                                <i class="glyphicon glyphicon-th"></i>
+                                <span></span>
+                            </button>
+                        </div>
+                        <h1>SPACE</h1>
+                    </div>
+                </nav>
+            </div>
+
+
+
+
+         <!-----JQ-->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-----BS JS-->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <!-----TOGGLE SCRIPT-->
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+
+
+
+
+       </div>
+    </body>
+</html>
